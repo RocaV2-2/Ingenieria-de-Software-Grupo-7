@@ -40,3 +40,8 @@ http://<app:port>/reiniciar
 ### Al recargar la página o incluso ingresar desde otro dispositivo
 <img width="765" height="492" alt="fdfd32" src="https://github.com/user-attachments/assets/96721414-e015-48ab-b909-87ab6be7886e" />
 
+
+### Usando la variante safe, en intento XSS no da resultado
+<img width="626" height="486" alt="fdfd32" src="https://github.com/user-attachments/assets/60db2f66-ac4f-4676-8b6b-5e149a3fec64" />
+
+
