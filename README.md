@@ -10,3 +10,19 @@ Este repositorio incluye dos aplicaciones de node `app.js` y `app-safe.js`, las 
 El script `app-safe.js` incluye sanitización de HTML para prevenir la inserción (y esparcimiento) de código malicioso usando `sanitize-html` y `helmet` para headers.
 
 Al contrario, `app.js` no tiene estas validaciones y la view `index-vulnerable` renderiza directamente **cualquier cosa** que tenga un comentario, habilitando el XSS.
+
+## Uso de las demos
+Se debe tener instalado Node/Npm para correr las demos, luego de clonar el repositorio:
+
+#### Instalar dependencias dentro del repo:
+```pw
+npm i express sqlite3 ejs helmet sanitize-html
+```
+
+#### Correr la variante de la app: (Safe o Vulnerable)
+```pw
+npm run vulnerable
+```
+```pw
+npm run safe
+```
