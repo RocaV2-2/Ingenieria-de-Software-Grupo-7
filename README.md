@@ -31,3 +31,12 @@ npm run safe
 ```
 http://<app:port>/reiniciar
 ```
+
+## Demo
+### Inserción de un mensaje malicioso
+<img width="820" height="1031" alt="fdfd32" src="https://github.com/user-attachments/assets/9868f930-269e-4fd8-b269-07c1757c1641" />
+
+
+### Al recargar la página o incluso ingresar desde otro dispositivo
+<img width="765" height="492" alt="fdfd32" src="https://github.com/user-attachments/assets/96721414-e015-48ab-b909-87ab6be7886e" />
+
