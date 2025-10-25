@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>XSS demo (vulnerable)</title>
+  </head>
+  <body>
+    <h1>Comentarios (vulnerable)</h1>
+
+    <form method="POST" action="/comment">
+      <textarea name="content" rows="3" cols="50" placeholder="Escribe algo..."></textarea>
+      <br><button type="submit">Enviar</button>
+    </form>
+
+    <h2>Listado</h2>
+    <ul>
+      <% comments.forEach(c => { %>
+        <li>
+          <!-- SALIDA SIN ESCAPAR: XSS -->
+          <%- c.content %>
+        </li>
+      <% }) %>
+    </ul>
+
+    <p style="margin-top:2rem">
+      Prueba enviando: <code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code>
+    </p>
+  </body>
+</html>

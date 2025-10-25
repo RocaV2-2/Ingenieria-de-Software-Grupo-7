@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "sanitize-html": "^2.17.0",
+    "sqlite3": "^5.1.7"
+  },
+  "scripts": {
+    "safe": "node app-safe.js",
+    "vulnerable": "node app.js"
+  }
+}

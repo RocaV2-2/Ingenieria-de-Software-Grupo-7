@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>XSS demo (seguro)</title>
+  </head>
+  <body>
+    <h1>Comentarios (seguro)</h1>
+
+    <form method="POST" action="/comment">
+      <textarea name="content" rows="3" cols="50" placeholder="Escribe algo..."></textarea>
+      <br><button type="submit">Enviar</button>
+    </form>
+
+    <h2>Listado</h2>
+    <ul>
+      <% comments.forEach(c => { %>
+        <li>
+          <!-- SALIDA ESCAPADA: EJS escapa HTML -->
+          <%= c.content %>
+        </li>
+      <% }) %>
+    </ul>
+
+    <p style="margin-top:2rem">
+      Probá el mismo payload: <code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code> — no se ejecuta.
+    </p>
+  </body>
+</html>
