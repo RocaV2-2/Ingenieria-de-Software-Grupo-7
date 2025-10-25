@@ -26,3 +26,8 @@ npm run vulnerable
 ```pw
 npm run safe
 ```
+
+## Reiniciar demo:
+```
+http://<app:port>/reiniciar
+```
